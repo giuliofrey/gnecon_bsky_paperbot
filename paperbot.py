@@ -1,7 +1,7 @@
 #!/home/alal/anaconda3/bin/python3
 
 """
-Script to post new articles from arxiv stat.ME and econ.EM. Bring your own handle and app-password.
+Script to post new articles from arxiv econ.gn. Bring your own handle and app-password.
 """
 
 # %%
@@ -155,7 +155,7 @@ def get_arxiv_feed(subject: str = "econ.em+stat.me"):
     return res
 
 
-def get_and_write_feed_json(feedname="econ.em+stat.me", filename="combined.json"):
+def get_and_write_feed_json(feedname="econ.gn", filename="combined.json"):
     feed = get_arxiv_feed(feedname)
     with open(filename, "r") as f:
         archive = json.load(f)
