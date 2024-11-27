@@ -184,7 +184,7 @@ def main():
     for k, v in pull.items():
         if k not in archive:  # if not already posted
             post_str = (
-                f"{v['title']}\n{v['link']}\n{''.join(v['description'])}"[:297] + "\n📈🤖"
+                f"{v['title']}\n{v['link']}\n{''.join(v['description'])}"[:297] + "\n #econsky 📈🤖"
             )
             create_post(post_str.replace("\n", " "))
             time.sleep(random.randint(60, 300))
